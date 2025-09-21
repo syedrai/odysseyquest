@@ -1,0 +1,128 @@
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.game-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+.game-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.game-difficulty {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Game playing styles */
+.game-playing {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.question-container {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.option-btn {
+  padding: 1rem;
+  border: 2px solid var(--light);
+  border-radius: var(--border-radius);
+  background: white;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.option-btn:hover {
+  border-color: var(--primary);
+  background: var(--light);
+}
+
+.voice-input-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.voice-btn.listening {
+  animation: pulse 1.5s infinite;
+  background: var(--secondary);
+}
+
+.score-display {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Game finished styles */
+.game-finished {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--success);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
+.game-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.performance-insights {
+  background: var(--light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.performance-insights ul {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.performance-insights li {
+  margin-bottom: 0.5rem;
+}
